@@ -19,16 +19,7 @@ int main(int argc, char* argv[])
     LOG(matrix[100][200][300]);
 
     for (const auto& matrix_element : matrix) {
-      // this
-      // std::size_t x;
-      // std::size_t y;
-      // std::size_t z;
-      // int value;
-      // std::tie(x, y, z, value) = matrix_element;
-      
-      // or this
-      auto [x, y, z, value] = matrix_element;
-      LOG(x, y, z, value);
+      LOG(matrix_element);
     }
 
   } catch (const std::exception& e) {
